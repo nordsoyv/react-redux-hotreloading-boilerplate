@@ -2,5 +2,5 @@
 dist
 node_modules
 *.iml
-public/bundle.js
+public/*.js
 
