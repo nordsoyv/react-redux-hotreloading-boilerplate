@@ -7,6 +7,12 @@ new WebpackDevServer(webpack(config), {
   contentBase: config.output.path,
   hot: true,
   historyApiFallback: true,
+  proxy: {
+    "*" : {
+      target : 'http://localhost:3001',
+      secure : false
+    }
+  },
   stats: {
     colors: true
   }
