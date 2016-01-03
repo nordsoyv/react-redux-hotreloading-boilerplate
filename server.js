@@ -1,14 +1,4 @@
-const express = require('express');
-var app = express();
+'use strict';
 
-
-
-
-
-app.use(express.static(__dirname + '/public'));
-
-var server = app.listen(3000, function () {
-    var port = server.address().port;
-
-    console.log('Example app listening at http://localhost:' + port);
-});
+require('babel-core/register');
+require('./src/server/app.js');

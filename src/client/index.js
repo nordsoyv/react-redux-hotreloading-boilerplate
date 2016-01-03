@@ -1,4 +1,4 @@
-import '../node_modules/todomvc-app-css/index.css';
+import '../../node_modules/todomvc-app-css/index.css';
 import React from 'react';
 import { render } from 'react-dom';
 import configureStore from './store/configureStore';
